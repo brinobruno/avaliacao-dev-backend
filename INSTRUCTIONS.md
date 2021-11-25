@@ -1,5 +1,5 @@
 # Checklist:
-- [ ] Operação A
+- [X] Operação A
 - [ ] Operação B
 - [ ] Operação C
 
