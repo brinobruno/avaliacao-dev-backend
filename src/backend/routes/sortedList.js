@@ -11,9 +11,4 @@ router.post('/', handleSort, (request, response) => {
   response.status(200).json({ listas })
 })
 
-router.get('/', (request, response) => {
-  console.log('Olá')
-  response.status(200).send()
-})
-
 module.exports = router
