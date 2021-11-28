@@ -16,24 +16,9 @@ function isInterlace(request, response, next) {
   for (let i = intervaloA[0]; i <= intervaloA[1]; i++) fullA.push(i);
   for (let i = intervaloB[0]; i <= intervaloB[1]; i++) fullB.push(i);
 
-  var intersection = function (arrayA, arrayB) {
-    //const isIntersection
-    let firstSet = new Set()
+  console.log(isIt)
     
-    for (let num of arrayA) {
-      firstSet.add(num)
-    }
-
-    let intersectionSet = new Set()
-
-    for (let num of arrayB) {
-      firstSet.has(num) ? console.log(true) : console.log(false)
-    }
-
-  }
-
   next()
-  
 }
 
 router.get('/', isInterlace, (request, response) => {
