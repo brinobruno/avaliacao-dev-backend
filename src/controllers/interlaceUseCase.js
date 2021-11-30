@@ -20,12 +20,12 @@ function isInterlace(request, response, next) {
             }
         }
 
-        for (let j = 0; j < arrayB.length ; j++) {
-        if(obj[arrayB[j]]) {
+        for (let j = 0; j < arrayB.length; j++) {
+        if (obj[arrayB[j]]) {
             return true;
         }
     }
-    
+
     return false;
 }
 
