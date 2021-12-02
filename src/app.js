@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 const sortedListRouter = require('./routes/sortedList')
-const interlaceRou
+const interlaceRouter = require('./routes/interlace')
 
 const app = express()
 
