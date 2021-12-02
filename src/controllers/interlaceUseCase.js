@@ -1,13 +1,8 @@
-function isInterlace(request, response, next) {
-  const { intervaloA, intervaloB } = request.body
+ function isInterlace(request, response, next) {
+  const fullA = [10, 40]
+  const fullB = [40, 50]
 
-  const fullA = [];
-  const fullB = [];
-
-  //Approach: Inserir os números dentro de cada intervalo em um array completo e comparar se houve algum número em comum
-  //Subótimo em grandes quantia por excesso de iteração. Ex: intervalo entre números com 5+ casas decimais
-  for (let i = intervaloA[0]; i <= intervaloA[1]; i++) fullA.push(i);
-  for (let i = intervaloB[0]; i <= intervaloB[1]; i++) fullB.push(i);
+  let result = Boolean
 
   function findCommonElements2(arrayA, arrayB) {
 
@@ -22,14 +17,15 @@ function isInterlace(request, response, next) {
 
         for (let j = 0; j < arrayB.length; j++) {
         if (obj[arrayB[j]]) {
-            return true;
+            return result = true
         }
     }
 
-    return false;
+    return result = false;
 }
 
-  console.log(findCommonElements2(fullA, fullB))
+  const finalResult = (findCommonElements2(fullA, fullB))
+  response.send(finalResult)
     
   next()
 }
