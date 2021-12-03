@@ -6,12 +6,12 @@
 
   function findCommonElements2(arrayA, arrayB) {
 
-    let obj = {};
+    let obj = {}
          
         for (let i = 0; i < arrayA.length; i++) {
             if(!obj[arrayA[i]]) {
-                const element = arrayA[i];
-                obj[element] = true;
+                const element = arrayA[i]
+                obj[element] = true
             }
         }
 
@@ -21,7 +21,7 @@
         }
     }
 
-    return result = false;
+    return result = false
 }
 
   const finalResult = (findCommonElements2(fullA, fullB))
